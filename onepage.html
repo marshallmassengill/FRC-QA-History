@@ -2520,6 +2520,17 @@ connecting bolts, and insulation)" or just one exemplary battery assembly? If on
 	<br><br>
 	(Asked by <b><span name="asker">3847</span></b> at <span name="pubdate">Feb 7th 20</span>)
 </div><div class="item">
+	<h2>Q<span name="number">259</span> Legality of Multiple Circuits on a PDP Breaker</h2>
+	<b>Q:</b>
+	<span name="question">R52 describes the legal quantity of circuits per PDP breaker. Is it permissible to power both a CUSTOM CIRCUIT and an additional PCM/VRM via one (1) 20A PDP breaker? Is it permissible to power one (1) additional PCM (which is connected to a pneumatics solenoid) and one additional VRM (which powers a CUSTOM CIRCUIT) via one (1) 20A PDP breaker?</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">No, a CUSTOM CIRCUIT and additional PCM/VRM may not be powered off the same breaker as they are separate lines in the Table 9-3 and per !R52 "No other electrical load can be connected to the breaker supplying this circuit."
+
+Yes, up to 3 total PCMs or VRMs in any combination may be connected to a 20A PDP breaker per Table 9-3.</span>
+	<br><br>
+	(Asked by <b><span name="asker">1114</span></b> at <span name="pubdate">Feb 11th 20</span>)
+</div><div class="item">
 	<h2>Q<span name="number">260</span> Cost accounting for tape - Follow up to Q100</h2>
 	<b>Q:</b>
 	<span name="question">Should tape be accounted for like a raw material in the same way that belt, chain, rope, etc. are accounted for? Would different colors of otherwise identical tape be Functionally Identical Replacements or would teams need to account for each color?</span>
@@ -2535,7 +2546,7 @@ connecting bolts, and insulation)" or just one exemplary battery assembly? If on
 needed to accommodate R21..." which reads in part, "Each ROBOT must be able to display Red or Blue BUMPERS to MATCH their ALLIANCE color...." In order to improve the durability of our bumper cover material, and maintain the color requirement, is the use of multiple layers of the same color cloth, (eg the 200D slick bumper material from a VENDOR-not-to-be-named here) legal?</span>
 	<br><br>
 	<b>A:</b>
-	<span name="answer">Use of more than a layer of BUMPER cloth for reasons other than to display Red or Blue (i.e. satisfy !R21) is not permitted per !R24-D.</span>
+	<span name="answer">Use of more than a layer of BUMPER cloth for reasons other than to display Red or Blue (i.e. satisfy !R21) or to display Team Numbers (i.e. satisfy !R22) is not permitted per !R24-D.</span>
 	<br><br>
 	(Asked by <b><span name="asker">5881</span></b> at <span name="pubdate">Feb 7th 20</span>)
 </div><div class="item">
@@ -2566,6 +2577,15 @@ Does the color of an item to meet a rule mean that it's not functionally equival
 	<span name="answer">A wire color that's identical except for color may or may not be a functional equivalent. For example, a blue wire of the same gauge, etc. may be considered functionally equivalent to the original black wire even though it's a different color - it has the same functional purpose electrically and they both communicate negative leads. If the color change communicates something different (e.g. a red wire being swapped in for a black wire), it's not functionally identical.</span>
 	<br><br>
 	(Asked by <b><span name="asker">3847</span></b> at <span name="pubdate">Feb 10th 20</span>)
+</div><div class="item">
+	<h2>Q<span name="number">264</span> Q261 follow up: Use of fabric for numbers legality</h2>
+	<b>Q:</b>
+	<span name="question">With Q261's answer, we are confused on the legality of using any fabric for showing bumper numbers via embroidery, gluing, etc. as they are not meant for showing RED or BLUE, but are used to satisfy R21. Is this method of showing bumper numbers now considered illegal? Does the ruling change if embroidery on a piece of alliance color fabric sewn onto the main bumper set (ie multiple layers of the same cloth used to show numbers to satisfy R21-A)?</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">Good catch, thank you. Please see [Team Update 11](https://firstfrc.blob.core.windows.net/frc2020/Manual/TeamUpdates/TeamUpdate11.pdf) and the edited answer to !Q261. If that doesn't answer your question, please rephrase and resubmit.</span>
+	<br><br>
+	(Asked by <b><span name="asker">4513</span></b> at <span name="pubdate">Feb 11th 20</span>)
 </div><div class="item">
 	<h2>Q<span name="number">265</span> "Layers" as relating to bumper cloth</h2>
 	<b>Q:</b>
@@ -2649,6 +2669,26 @@ Deflection angle when pressed, material and  thickness, overhang length of unsup
 	<br><br>
 	(Asked by <b><span name="asker">5987</span></b> at <span name="pubdate">Feb 10th 20</span>)
 </div><div class="item">
+	<h2>Q<span name="number">276</span> Multiple solenoid valves</h2>
+	<b>Q:</b>
+	<span name="question">Could you please clarify the intent of R87? I would like to use two SVs to control a cylinder so that I can start it and stop it at any position. This can be accomplished by using check valves in opposing directions on the output of two SVs so that one can only supply pressure and the other can only vent and route these to a common port on a cylinder. I would just reverse one of the SVs and use the input to vent, but they require a pilot pressure higher than our desired operating pressure.</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">Connecting the output of two solenoid valves together with check valves in place such that the outputs are never additive does not violate !R87. Make sure the resultant configuration complies with !R86-A and be prepared to explain/demonstrate how the output of the solenoid valves are not additive.</span>
+	<br><br>
+	(Asked by <b><span name="asker">1421</span></b> at <span name="pubdate">Feb 11th 20</span>)
+</div><div class="item">
+	<h2>Q<span name="number">277</span> Vacuum Under Robot</h2>
+	<b>Q:</b>
+	<span name="question">Is producing a sub-atmospheric pressure volume under a robot considered 'grappling' or 'grasping' the field carpet and thus a violation of G26?</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">This is considered "attaching" to the FIELD and is in violation of !G26-C.
+
+We have added clarification in!G26-Cin [Team Update 11](https://firstfrc.blob.core.windows.net/frc2020/Manual/TeamUpdates/TeamUpdate11.pdf).</span>
+	<br><br>
+	(Asked by <b><span name="asker">95</span></b> at <span name="pubdate">Feb 11th 20</span>)
+</div><div class="item">
 	<h2>Q<span name="number">278</span> Q275 Clarification</h2>
 	<b>Q:</b>
 	<span name="question">A follow-up to the answer of Q275. If "revolutions in the opposite direction don't subtract", does that mean that they reset? If I spin the CONTROL PANEL 3 rotations CW, 0.5 rotations CCW, then 1 rotation CW, how many revolutions would the CONTROL PANEL have counted?</span>
@@ -2657,6 +2697,26 @@ Deflection angle when pressed, material and  thickness, overhang length of unsup
 	<span name="answer">The CONTROL PANEL only resets when more than 5 complete rotations are detected in any direction. Rotations in either direction of less than 5 complete rotations do not affect the rotation count in the other direction.</span>
 	<br><br>
 	(Asked by <b><span name="asker">5987</span></b> at <span name="pubdate">Feb 10th 20</span>)
+</div><div class="item">
+	<h2>Q<span name="number">280</span> Hard Line Pneumatic Tubing?</h2>
+	<b>Q:</b>
+	<span name="question">R77-D permits teams to use additional pneumatic tubing of their choice and does not specify or limit the materials that this tubing may be made of.  Does this mean that hard line (typically copper or stainless steel) pneumatic tubing is legal provided that it meets the other criteria (namely pressure rating and outside diameter)?
+
+If this is the case, bending or deforming tubing (of any material, even polyurethane) is not listed in R76, does that mean it is not legal to bend pneumatic tubing?</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">Pneumatic tubing made of other materials may be legal, provided it meets the requirements of !R75 and !R77-D. Bending of pneumatic tubing that only causes elastic deformation is not considered altering the condition of the tubing. Bending or deforming of tubing that results in a permanent change in its shape (plastic deformation) is a change in the condition of the tubing, and not permitted per !R76.</span>
+	<br><br>
+	(Asked by <b><span name="asker">5413</span></b> at <span name="pubdate">Feb 11th 20</span>)
+</div><div class="item">
+	<h2>Q<span name="number">283</span> Offboard Compressors and R79</h2>
+	<b>Q:</b>
+	<span name="question">We are looking for clarification to R79. Are we allowed to use an off-board compressor and tank system to cool motors? We would only plug the tubes from our off-board system into the ports on our Falcon 500s and release the air to cool them between matches</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">Provided that one or more set screw plugs are removed from the Falcon 500, the device is not considered a pneumatic device as it is not a sealed system capable of maintaining pressure. !R79 and other pneumatic rules do not apply in this case (though other safety and event rules may apply).</span>
+	<br><br>
+	(Asked by <b><span name="asker">3175</span></b> at <span name="pubdate">Feb 11th 20</span>)
 </div>
 </body>
 </html>
