@@ -1218,6 +1218,38 @@ What restrictions are there on the type of plywood?</span>
 	answered <span name="pubdate">Jan 20th 23</span>
 	)
 </div><div class="item">
+	<h2>Q<span name="number">92</span> Does Disabled outputs include Drive Station data</h2>
+	<b>Q:</b>
+	<span name="question">Under 6.5 Rule Violations definitions
+
+DISABLED - the state in which a ROBOT is commanded to deactivate all outputs, rendering the ROBOT inoperable for the remainder of the MATCH.
+
+Is this intended to include output to the Drive Station as well as the Robot itself?  For example: telemetry and video streams from both the RoboRIO and co-processors may be active.  We would like to display autonomous settings on the dashboard before match start.  These are outputs even though the robot itself is ino</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">A DISABLED ROBOT is still able to send signals to its OPERATOR CONSOLE; only its outputs to actuators are deactivated.</span>
+	<br><br>
+	(
+	Asked by 
+	<b><span name="asker">4662</span></b>
+	answered <span name="pubdate">Jan 23rd 23</span>
+	)
+</div><div class="item">
+	<h2>Q<span name="number">94</span> REV and CTRE Elelctrical Modules</h2>
+	<b>Q:</b>
+	<span name="question">Can I power the REV pneumatic and radio power modules from the CTRE PDP directly? Or do I run the pneumatic module directly off the PDP and the radio power off of the VRM?</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">Per !R616, the radio is powered by a VRM *or* an RPM. The power regulating device (VRM *or* RPM) sources power as described in !R617 (directly from the designated terminals on the PDP or PDH, not through a VRM). 
+
+The PH sources power either from a single protected 12VDC WAGO connector pair of the PDP/PDH, per !R610 and as shown in [this layout diagram](https://docs.wpilib.org/en/stable/_images/frc-control-system-layout-rev.svg), or from the second pair of fuse protected terminals on the PDP as described in !R617-A</span>
+	<br><br>
+	(
+	Asked by 
+	<b><span name="asker">7117</span></b>
+	answered <span name="pubdate">Jan 23rd 23</span>
+	)
+</div><div class="item">
 	<h2>Q<span name="number">96</span> Compressor Operation with Solenoid Code</h2>
 	<b>Q:</b>
 	<span name="question">When using Java to program for FRC, is the compressor supposed to start when any solenoid code is used or do I have to start the compressor separately.  We are having trouble with our compressor not starting automatically when using solenoid code.</span>
@@ -1242,6 +1274,64 @@ What restrictions are there on the type of plywood?</span>
 	Asked by 
 	<b><span name="asker">2168</span></b>
 	answered <span name="pubdate">Jan 22nd 23</span>
+	)
+</div><div class="item">
+	<h2>Q<span name="number">98</span> G301 Clarification on using a FIELD ELEMENT to align an extension of the ROBOT</h2>
+	<b>Q:</b>
+	<span name="question">If a team consequentially/intentionally uses FIELD ELEMENTS, either in the COMMUNITY and/or LOADING ZONE, in such a manner that it aligns. slides and/or rests an extension of the ROBOT on or against said FIELD ELEMENTS, and it is NOT supporting the weight of the ROBOT, and said use does not damage the field, is not grasping or grabbing or suspending from a FIELD ELEMENT, neither is it snug, encompassing or otherwise gripping or blocking a FIELD ELEMENT, would such contact be in violation of G301</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">We cannot comment absolutely on hypothetical scenarios. The ultimate decision would be determined by the REFEREES at your event, with the final call made by the Head REFEREE.
+
+Generally, touching or reacting against ARENA elements are not violations of !G301, unless the ROBOT is acting in a way that violates !G301.</span>
+	<br><br>
+	(
+	Asked by 
+	<b><span name="asker">3990</span></b>
+	answered <span name="pubdate">Jan 23rd 23</span>
+	)
+</div><div class="item">
+	<h2>Q<span name="number">99</span> G109 Momentery extension</h2>
+	<b>Q:</b>
+	<span name="question">Can the elbow of a jointed arm mometarily swing out of the frame perimeter on the back side while the arm extends out the front side? And does this apply to both community and loading zone? Or can it be outside of both sides in the community zone?</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">!G109 does not apply to a ROBOT that is fully contained within its LOADING ZONE or COMMUNITY. As noted in !Q50 a ROBOT purposefully extending part of itself outside the boundaries in !G109 is likely consequential and thus is a violation of the rule.</span>
+	<br><br>
+	(
+	Asked by 
+	<b><span name="asker">2252</span></b>
+	answered <span name="pubdate">Jan 23rd 23</span>
+	)
+</div><div class="item">
+	<h2>Q<span name="number">100</span> Addition to battery asembly</h2>
+	<b>Q:</b>
+	<span name="question">R609 describes how a battery assembly is legally assembled.  It pertains mostly to the electrical specifications which shall include 6 AWG wire or larger and Anderson SB connector.
+
+Is it legal to permanently install a mechanical fixture onto the battery to orient the SB connector in a very specific orientation.  All batteries would be installed with one of these fixture.  Fixture is purely mechanical and won't affect electrical behavior.  
+
+A fixture would be included with the robot weight.</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">Provided such a fixture does not involve physically modifying the battery (i.e. the battery is the same after removing the fixture as it was before it was installed) and is included in the ROBOT weight per !R103, there are no rules explicitly prohibiting this.</span>
+	<br><br>
+	(
+	Asked by 
+	<b><span name="asker">9312</span></b>
+	answered <span name="pubdate">Jan 23rd 23</span>
+	)
+</div><div class="item">
+	<h2>Q<span name="number">101</span> Rule R707 : Would it be possible to exclude NFC Near-field Communications</h2>
+	<b>Q:</b>
+	<span name="question">Rule R707 states “No other wireless allowed.” Would it be possible to exclude NFC Near-field Communications to enable teams to collect data like What Battery is currently installed in their robot using the WPILib data logging features by adding a RFID tag to each battery with unique ID’s and low power RFID reader. Could a system like this be installed and disabled during the match to adhere to the rule similarly to rules of software robot extension limits?</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">Thank you for the suggestion. We have no plans to edit !R707 for the 2023 season to allow NFC.</span>
+	<br><br>
+	(
+	Asked by 
+	<b><span name="asker">4607</span></b>
+	answered <span name="pubdate">Jan 23rd 23</span>
 	)
 </div>
 </body>
