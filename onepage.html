@@ -2032,6 +2032,19 @@ Manifolds are an industry standard, so if they do technically violate R814, can 
 	answered <span name="pubdate">Feb 8th 23</span>
 	)
 </div><div class="item">
+	<h2>Q<span name="number">155</span> Followup regarding manifolded outputs, inlets, and exhausts</h2>
+	<b>Q:</b>
+	<span name="question">Hello! When a pneumatic solenoid valve actuates, it aligns a source of pressurized air with Side A of a pneumatic cylinder, and it simultaneously aligns Side B of the pneumatic cylinder with a pipe in free communication with the atmosphere. Are there any rules that prevent either (a) the pressurized source or (b) the pipe in free communication with the atmosphere from being manifolded together to support multiple solenoids in parallel? This answer will clarify Q153 & R814. Thank you! Nate</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">Per !R814, switched pressure outputs from multiple solenoid valves must not be plumbed together. Supply from the compressed air source to the valves and exhaust flow from the valves may be combined (e.g. within a COTS valve manifold that is legal per !R804.)</span>
+	<br><br>
+	(
+	Asked by 
+	<b><span name="asker">2363</span></b>
+	answered <span name="pubdate">Feb 13th 23</span>
+	)
+</div><div class="item">
 	<h2>Q<span name="number">156</span> Using a Spring to Close Grabber</h2>
 	<b>Q:</b>
 	<span name="question">Our team has been working with a concept to use a spring to keep the grabber closed, and using a motor as a winch to open it. The spring is in between two arms forcing them to close. Right now, the prototype is using a basic door spring like this: https://tinyurl.com/3p6pnbrc
@@ -2215,6 +2228,19 @@ Does this confirm for us that we need to change the height of the robot to follo
 	answered <span name="pubdate">Feb 13th 23</span>
 	)
 </div><div class="item">
+	<h2>Q<span name="number">169</span> Vacuum and definition of pneumatic COMPONENTS</h2>
+	<b>Q:</b>
+	<span name="question">Per R804 Blue Box, a device that creates a vacuum is not a "pneumatic device". If, in the vacuum "system" we use a solenoid valve, under negative operating pressure, is that solenoid valve a "pneumatic COMPONENT" subject to R805? Similarly is a solenoid valve a "pneumatic COMPONENT" as that word-pair is otherwise undefined in the manual or is it, in this configuration part of the "device" subject to the R804 Blue Box?</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">A solenoid valve used as part of a vacuum system would not be considered a pneumatic device per a&d of the !R804 Blue Box. It would still be a "pneumatic solenoid valve" or "electric solenoid actuator" and subject to all appropriate rules regarding wiring and powering such as !R504.</span>
+	<br><br>
+	(
+	Asked by 
+	<b><span name="asker">5881</span></b>
+	answered <span name="pubdate">Feb 13th 23</span>
+	)
+</div><div class="item">
 	<h2>Q<span name="number">170</span> Black Bumper Number Outline</h2>
 	<b>Q:</b>
 	<span name="question">If a Team's WHITE bumper numbers meet the criteria as listed in Rule R406, can a Team include an additional backing layer of an alternate color (e.g. black) that is visible around the white letters (as an offset)? 
@@ -2255,6 +2281,61 @@ A ROBOT purposefully extending part of itself outside the boundaries in !G109 is
 	(
 	Asked by 
 	<b><span name="asker">2811</span></b>
+	answered <span name="pubdate">Feb 13th 23</span>
+	)
+</div><div class="item">
+	<h2>Q<span name="number">174</span> limits switches</h2>
+	<b>Q:</b>
+	<span name="question">can we use limits switches other than the ones supplied by Andymark. (heavier duty)?</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">There are no rules that require limit switches be purchased from a specific company.</span>
+	<br><br>
+	(
+	Asked by 
+	<b><span name="asker">4314</span></b>
+	answered <span name="pubdate">Feb 13th 23</span>
+	)
+</div><div class="item">
+	<h2>Q<span name="number">176</span> Use of roboRIO as coprocessor</h2>
+	<b>Q:</b>
+	<span name="question">R701 states that "ROBOTS must be controlled via 1 programmable NI roboRIO
+or roboRIO 2.0". Does this rule prohibit the use of a second NI roboRIO or roboRIO 2.0 as a coprocessor, provided that all commands to enable actuators originate from only one roboRIO?</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">Use of additional roboRIOs does not violate R701 provided all commands to enable actuators originate from a single roboRIO.</span>
+	<br><br>
+	(
+	Asked by 
+	<b><span name="asker">1018</span></b>
+	answered <span name="pubdate">Feb 13th 23</span>
+	)
+</div><div class="item">
+	<h2>Q<span name="number">177</span> Core control system components as part of a custom circuit</h2>
+	<b>Q:</b>
+	<span name="question">CUSTOM CIRCUIT is defined as "Any active electrical item that is not an actuator...or core control system item (specified in R710)". R710 lists, among other items, "motor controllers" and "relay modules". In the answer to Q135, you said that Spike relay modules used to control LEDs would be considered a custom circuit. Can "core control system items", such as motor controllers and relay modules (such as the Spike), be used in a custom circuit, provided that they are not controlling actuators?</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">Yes. Using a core control system item to control something other than an actuator on the ROBOT is considered a CUSTOM CIRCUIT and subject to those rules for legal implementation.</span>
+	<br><br>
+	(
+	Asked by 
+	<b><span name="asker">1018</span></b>
+	answered <span name="pubdate">Feb 13th 23</span>
+	)
+</div><div class="item">
+	<h2>Q<span name="number">178</span> R408 and bumper mounting system outside of the bumper zone</h2>
+	<b>Q:</b>
+	<span name="question">Hello, R408-G requires a rigid fastening system to mount the bumpers. May this "fastening system" extend above a bumper segment and be outside of the bumper zone? May part of the fastening system be outside of the frame perimeter (within the 1" hard parts limit established by R408) and above the 7.5 inch max height of the bumper zone. Thank you, Spectrum</span>
+	<br><br>
+	<b>A:</b>
+	<span name="answer">The BUMPER attachment system may extend above the BUMPER, but any part of the BUMPER attachment system that is part of the
+BUMPER (per !R408-G) must be located in the BUMPER ZONE per !R402 and any part that is part of the ROBOT must remain
+within the FRAME PERIMETER.</span>
+	<br><br>
+	(
+	Asked by 
+	<b><span name="asker">3847</span></b>
 	answered <span name="pubdate">Feb 13th 23</span>
 	)
 </div>
